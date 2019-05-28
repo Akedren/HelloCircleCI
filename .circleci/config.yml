@@ -12,6 +12,7 @@ jobs:
       - run:
           command: |  # use pipenv to install dependencies
             sudo pip install -U pytest
+            sudo pip install -U requests
       - run:
           name: run tests
           command: |
