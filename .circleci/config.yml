@@ -18,7 +18,7 @@ jobs:
           name: run tests
           command: |
             mkdir test-reports
-            python -m pytest --junitxml test-results/results.xml tests/
+            python -m pytest --junitxml functions/hellocircle/test-results/results.xml functions/hellocircle/tests/
       - store_test_results:
           path: test-results 
       - store_artifacts:
