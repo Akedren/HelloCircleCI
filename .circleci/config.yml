@@ -11,8 +11,7 @@ jobs:
       - checkout  # checkout source code to working directory
       - run:
           command: |  # use pipenv to install dependencies
-            sudo pip install pipenv
-            pipenv install          
+            sudo pip install -U pytest
       - run:
           name: run tests
           command: |
