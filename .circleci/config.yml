@@ -13,3 +13,5 @@ jobs:
           command: |  # use pipenv to install dependencies
             sudo pip install pipenv
             pipenv install          
+      - store_test_results:
+          path: test-results            
