@@ -16,6 +16,6 @@ jobs:
       - run:
           name: Unittest
           command: |
-            python -m unittest
+            python -m unittest hellocircle_test.py
       - store_test_results:
           path: test-results 
