@@ -10,6 +10,7 @@ jobs:
     steps:
       - checkout  # checkout source code to working directory
       - run:
+          name: Add Packages
           command: |  # use pipenv to install dependencies
             sudo pip install -U pytest
             sudo pip install -U requests
@@ -17,7 +18,7 @@ jobs:
           name: run tests
           command: |
             mkdir test-reports
-            python -m pytest --junitxml results.xml tests/
+            python -m pytest --junitxml test-results/results.xml tests/
       - store_test_results:
           path: test-results 
       - store_artifacts:
