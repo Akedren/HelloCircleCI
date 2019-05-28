@@ -14,8 +14,11 @@ jobs:
             sudo pip install pipenv
             pipenv install          
       - run:
-          name: Unittest
+          name: run tests
           command: |
-            python -m unittest hellocircle_test.py
+            mkdir test-reports
+            python -m pytest --junitxml results.xml tests/
       - store_test_results:
           path: test-results 
+      - store_artifacts:
+          path: test-reports             
