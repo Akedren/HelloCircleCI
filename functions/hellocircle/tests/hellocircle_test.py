@@ -1,7 +1,7 @@
 import unittest
 
-from hellocircle import HelloWorld
-from handler import hello_world
+from hellocircle.hello_circle import HelloWorld
+from hellocircle.handler import hello_world
 
 class TestHelloWorld(unittest.TestCase):
 

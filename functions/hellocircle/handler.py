@@ -1,4 +1,4 @@
-from hellocircle import HelloWorld
+from hellocircle.hello_circle import HelloWorld
 import json
 import requests
 
